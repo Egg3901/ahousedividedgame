@@ -4,7 +4,7 @@ $stategiven = $_GET['state'];
 $thisPage=$stategiven;
 session_start();
 if (!isset($_SESSION['loggedin'])) {
-    header('Location: landing.html');
+    header('Location: index.html');
     exit;
 }
 ?>
