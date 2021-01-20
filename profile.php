@@ -5,10 +5,10 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.html');
     exit;
 }
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '.66fHTmBZRK6sAu';
-$DATABASE_NAME = 'phplogin';
+$DATABASE_HOST = 'mi3-ss55';
+$DATABASE_USER = 'ahousedi_phplogin';
+$DATABASE_PASS = '3g6V27LEmDCUFnv';
+$DATABASE_NAME = 'ahousedi_phplogin';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
     exit('Failed to connect to MySQL: ' . mysqli_connect_error());

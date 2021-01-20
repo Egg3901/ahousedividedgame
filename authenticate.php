@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Change this to your connection info.
-$DATABASE_HOST = 'localhost';
+$DATABASE_HOST = 'mi3-ss55';
 $DATABASE_USER = 'ahousedi_phplogin';
 $DATABASE_PASS = '3g6V27LEmDCUFnv';
 $DATABASE_NAME = 'ahousedi_phplogin';
