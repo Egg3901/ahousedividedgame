@@ -1,7 +1,7 @@
 <?php// Change this to your connection info.
 $DATABASE_HOST = 'https://ahousedivided.a2hosted.com/';
-$DATABASE_USER = 'ahousedi_ahousedi';
-$DATABASE_PASSWORD = '3g6V27LEmDCUFnv';
+$DATABASE_USER = 'AHDAdmin';
+$DATABASE_PASSWORD = '3ED*3^^e70WZl';
 $DATABASE_NAME = 'ahousedi_phplogin';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASSWORD, $DATABASE_NAME);
