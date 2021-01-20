@@ -6,3 +6,4 @@ deployment:
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp register.php $DEPLOYPATH
     - /bin/cp register.html $DEPLOYPATH
+    - /bin/cp activate.php $DEPLOYPATH
