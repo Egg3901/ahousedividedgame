@@ -3,10 +3,10 @@ session_start();
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'ahousedi_phplogin';
-$DATABASE_PASSWORD = '3g6V27LEmDCUFnv'
+$DATABASE_PASS = '3g6V27LEmDCUFnv'
 $DATABASE_NAME = 'ahousedi_phplogin';
 // Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_NAME);
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS,$DATABASE_NAME);
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
