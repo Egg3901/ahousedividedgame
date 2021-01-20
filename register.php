@@ -1,15 +1,5 @@
 <?php
-// Change this to your connection info.
-$DATABASE_HOST = 'mi3-ss55';
-$DATABASE_USER = 'ahousedi_ahousedi';
-$DATABASE_PASSWORD = '3g6V27LEmDCUFnv';
-$DATABASE_NAME = 'ahousedi_phplogin';
-// Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASSWORD, $DATABASE_NAME);
-if (mysqli_connect_errno()) {
-    // If there is an error with the connection, stop the script and display the error.
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+include 'connect.php';
 // Now we check if the data was submitted, isset() function will check if the data exists.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'],$_POST['state'],$_POST['social'],$_POST['economic'])) {
     // Could not get the data that should have been sent.
