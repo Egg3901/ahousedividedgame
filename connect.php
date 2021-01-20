@@ -1,5 +1,5 @@
 <?php// Change this to your connection info.
-$DATABASE_HOST = 'ahdgame';
+$DATABASE_HOST = 'https://ahousedivided.a2hosted.com/';
 $DATABASE_USER = 'ahousedi_ahousedi';
 $DATABASE_PASSWORD = '3g6V27LEmDCUFnv';
 $DATABASE_NAME = 'ahousedi_phplogin';
