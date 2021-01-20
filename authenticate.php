@@ -4,7 +4,7 @@ session_start();
 $DATABASE_HOST = 'mi3-ss55';
 $DATABASE_USER = 'ahousedi_phplogin';
 $DATABASE_PASS = '3g6V27LEmDCUFnv';
-$DATABASE_NAME = 'ahousedi_phplogin';
+$DATABASE_NAME = 'ahousedi_ahousedi';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS,$DATABASE_NAME);
 // Try and connect using the info above.
