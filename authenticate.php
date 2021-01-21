@@ -1,8 +1,8 @@
 <?php
 session_start();
-// Change this to your connection info.
-include 'connect.php';
 
+
+$con = new PDO('mysql:host=localhost;dbname=ahousedi_phplogin', 'ahousedi_ahousedi', '26Uz7wV4:]rYuN');
 if ( !isset($_POST['username'], $_POST['password']) ) {
     // Could not get the data that should have been sent.
     exit('Please fill both the username and password fields!');
