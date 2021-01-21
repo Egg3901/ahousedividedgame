@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect('localhost','ahousedi_ahousedi','26Uz7wV4:]rYuN');
+include 'connect.php';
+$con = OpenCon();
 if ( !isset($_POST['username'], $_POST['password']) ) {
     // Could not get the data that should have been sent.
     exit('Please fill both the username and password fields!');
@@ -50,5 +51,6 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
     echo 'Could not prepare statement!';
 }
-$con->close();
+CloseCon($conn);
+
 ?>
