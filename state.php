@@ -3,7 +3,7 @@
 <?php include 'navigation.php';
 
 $state = $_GET['state'];
-
+$con = OpenCon();
 
 echo "
 <div class ='state-header'>
@@ -37,5 +37,5 @@ foreach ($result as $row) {
 }
 print "</table>";
 
-mysqli_close($con);
+CloseCon($conn);
 ?>
