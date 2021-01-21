@@ -1,6 +1,19 @@
+<?php
+function OpenCon()
+{
+$dbhost = "localhost";
+$dbuser = "ahousedi_ahousedi";
+$dbpass = "26Uz7wV4:]rYuN";
+$db = "ahousedi_phplogin";
+$conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
 
-error_reporting(-1); // reports all errors
-ini_set("display_errors", "1"); // shows all errors
-ini_set("log_errors", 1);
-ini_set("error_log", "/tmp/php-error.log");
+return $conn;
+}
+
+function CloseCon($conn)
+{
+$conn -> close();
+}
+
+?>
 
