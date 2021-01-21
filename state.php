@@ -3,6 +3,7 @@
 <?php include 'navigation.php';
 
 $state = $_GET['state'];
+include 'connect.php';
 $con = OpenCon();
 
 echo "
