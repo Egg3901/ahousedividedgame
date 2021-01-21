@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 
 $con = new PDO('mysql:host=localhost;dbname=ahousedi_phplogin', 'ahousedi_ahousedi', '26Uz7wV4:]rYuN');
 if ( !isset($_POST['username'], $_POST['password']) ) {
