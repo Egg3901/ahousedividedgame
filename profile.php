@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
     exit;
 }
 include 'connect.php';
-
+$con = OpenCon();
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
 $stmt = $con->prepare('SELECT password, email, influence, polstate, polname, imgurl, social, economic FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
@@ -144,3 +144,4 @@ $stmt->close();
 </div>
 </body>
 </html>
+CloseCon($conn);
