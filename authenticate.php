@@ -3,11 +3,12 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
 
-$con = mysqli_connect('localhost','ahousedi_ahousedi','26Uz7wV4:]rYuN');
+
 if ( !isset($_POST['username'], $_POST['password']) ) {
     // Could not get the data that should have been sent.
     exit('Please fill both the username and password fields!');
 }
+$con = mysqli_connect('localhost','ahousedi_ahousedi','26Uz7wV4:]rYuN');
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
     // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
     $stmt->bind_param('s', $_POST['username']);
@@ -24,7 +25,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
-            $_SESSION['name'] = $_POST['username'];
+            $_SESSION['name'] = $_POST['polname'];
             $_SESSION['id'] = $id;
             header('Location: profile.php');
         } else {
