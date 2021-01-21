@@ -8,7 +8,7 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
     // Could not get the data that should have been sent.
     exit('Please fill both the username and password fields!');
 }
-$con = mysqli_connect('localhost','ahousedi_ahousedi','26Uz7wV4:]rYuN');
+$con = mysqli_connect('localhost','ahousedi_ahousedi','26Uz7wV4:]rYuN') or die ('not connected');
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
     // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
     $stmt->bind_param('s', $_POST['username']);
