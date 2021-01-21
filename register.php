@@ -1,5 +1,9 @@
 <?php
-include 'connect.php';
+$con = mysqli_connect('localhost','ahousedi_ahousedi','26Uz7wV4:]rYuN');
+if ( !isset($_POST['username'], $_POST['password']) ) {
+    // Could not get the data that should have been sent.
+    exit('Please fill both the username and password fields!');
+}
 // Now we check if the data was submitted, isset() function will check if the data exists.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'],$_POST['state'],$_POST['social'],$_POST['economic'])) {
     // Could not get the data that should have been sent.
